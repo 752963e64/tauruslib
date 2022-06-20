@@ -1,9 +1,4 @@
-all: libs apps
-
-libs:
-	@echo '-> Building libs'
-	@make --no-print-directory -C src
-	@echo ''
+all: apps
 
 apps:
 	@echo '-> Building apps:'
@@ -16,6 +11,10 @@ apps:
 	@echo ''
 	@echo 'run static version:'
 	@echo '	bin/donut_static'
+	@echo ''
+	@echo 'If you wish to use 32bit instead native'
+	@echo 'run "make -C src shared32" and "make -C src static32"'
+
 
 clean:
 	@echo -n '-> Cleaning: '
