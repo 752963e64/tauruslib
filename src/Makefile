@@ -1,7 +1,6 @@
-CC = gcc
-CFLAGS = -std=c99 \
-		 -Wall -Wextra -Werror -fomit-frame-pointer \
-		 -Wno-unused-function -D_DEFAULT_SOURCE
+CC = gcc -v -std=c99 \
+	-Wall -Wextra -Werror -fomit-frame-pointer \
+	-Wno-unused-function -D_DEFAULT_SOURCE -O2
 SYSLIBS = -lm
 OURLIB = -ltaurus
 LDPATH = -L../lib
