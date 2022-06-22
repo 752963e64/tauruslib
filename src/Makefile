@@ -1,4 +1,4 @@
-CC = gcc -v -std=c99 \
+CC = gcc -std=c99 \
 	-Wall -Wextra -Werror -fomit-frame-pointer \
 	-Wno-unused-function -D_DEFAULT_SOURCE -O2
 SYSLIBS = -lm
